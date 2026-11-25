@@ -1,0 +1,18 @@
+{
+  "name": "mod_KirmodStorageSpaces",
+  "version": {"file": "src/net/minecraft/src/mod_KirmodStorageSpaces.java", "regex": "new KirPlugin\\(\"Storage Spaces\", \"([^\"]+)\""},
+  "minecraft": "1.3.2",
+  "mcp": "mcp72",
+  "sides": ["client"],
+  "sources": {"client": "src"},
+  "libraries": {"client": ["kirmod/src", "kirmod/ci/libs"]},
+  "patches": {"client": "kirmod/ci/patches/client"},
+  "exclude": ["net/minecraft/src/Tessellator"],
+  "jar_mods": {"client": [
+    {"url": "https://archive.org/download/risugamis-mod-loader-all-versions/ModLoader-r1.3.2.00%2Bbuild.1.jar",
+     "sha256": "cb188a0b760152c07a8583bdb39886f49211e7bd34fe7b615b2a0dc18ff728da"}
+  ]},
+  "filename": "{name}-{version}.zip",
+  "java": 8,
+  "sources_zip": false
+}
